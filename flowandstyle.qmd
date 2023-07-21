@@ -1,0 +1,5 @@
+# KDV Workflow and Code Style
+
+No project will perfectly fit a standard mold, but aiming to follow a general set of methods makes it easier to collaborate in code development and maintain code products.
+
+Project Organization

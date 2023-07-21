@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This book is a living document provided reference materials to KDV employees and collaborators.I is maintained as a new employee onboarding aid, a reference manual, and an example for students in our “Code Management for Research Teams” workshops.\nContributors include:\nC. Ashton Drew Eliot Dixon Katie Talavera EmmaLi Tsai"
+  },
+  {
+    "objectID": "summary.html#general-principals",
+    "href": "summary.html#general-principals",
+    "title": "2  KDV Workflow and Code Style",
+    "section": "2.1 General Principals",
+    "text": "2.1 General Principals\nMaximize the readability of the code.\nWe want the researchers and other clients we assist to be able to understand the code we produce. We also want to be able to return to the code ourselves or pass the code to a future collaborator with minimal effort. Consistent organization, thorough comments, and tidy code style promote readability.\nProtect client data.\nWhile we value open-source products, all client code and data are private and protected unless otherwise requested. We have organizational licenses for code repositories (Github), data storage (Dropbox), and security (Bitdefender).\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "intro.html#protect-client-data",
+    "href": "intro.html#protect-client-data",
+    "title": "1  General Principals",
+    "section": "1.1 Protect client data",
+    "text": "1.1 Protect client data\nWhile we value open-source products, all client code and data are private and protected unless otherwise requested. We have organizational licenses for code repositories (Github), data storage (Dropbox), and security (Bitdefender)."
+  },
+  {
+    "objectID": "intro.html#maximize-the-readability-of-the-code",
+    "href": "intro.html#maximize-the-readability-of-the-code",
+    "title": "1  General Principals",
+    "section": "1.2 Maximize the readability of the code",
+    "text": "1.2 Maximize the readability of the code\nWe want the researchers and other clients we assist to be able to understand the code we produce. We also want to be able to return to the code ourselves or pass the code to a future collaborator with minimal effort. Consistent organization, thorough comments, and tidy code style promote readability."
+  },
+  {
+    "objectID": "intro.html#minimize-assumptions",
+    "href": "intro.html#minimize-assumptions",
+    "title": "1  General Principals",
+    "section": "1.3 Minimize assumptions",
+    "text": "1.3 Minimize assumptions\nWe apply tests to our code and code products, as possible and appropriate. We use version control to manage our projects and their dependencies."
+  },
+  {
+    "objectID": "intro.html#value-the-time-spent-on-admin-tasks",
+    "href": "intro.html#value-the-time-spent-on-admin-tasks",
+    "title": "1  General Principals",
+    "section": "1.4 Value the time spent on admin tasks",
+    "text": "1.4 Value the time spent on admin tasks\nWe believe project administration is a collaborative task and aim to allow all project members time to effectively contribute. Individuals are expected to use the tools available to plan strategy, document issues, track progress, and capture useful code snippets for future use."
+  },
+  {
+    "objectID": "intro.html#contribute-back-to-the-community",
+    "href": "intro.html#contribute-back-to-the-community",
+    "title": "1  General Principals",
+    "section": "1.5 Contribute back to the community",
+    "text": "1.5 Contribute back to the community\nWe are too small to be a certified B-corp, but we can still value giving back to our community. Employees are encouraged to share their hard-earned and useful skills via publication, instruction, conference participation, and/or community service."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "KDV Reference",
+    "section": "",
+    "text": "Preface\nThis book is a living document created to provide reference materials to KDV employees and collaborators. It is maintained as an onboarding aid, a reference manual, and an example for students in our “Code Management for Research Teams” workshops.\nContributors include:\nC. Ashton Drew Eliot Dixon Katie Talavera EmmaLi Tsai"
+  },
+  {
+    "objectID": "flowandstyle.html",
+    "href": "flowandstyle.html",
+    "title": "2  KDV Workflow and Code Style",
+    "section": "",
+    "text": "No project will perfectly fit a standard mold, but aiming to follow a general set of methods makes it easier to collaborate in code development and maintain code products.\nProject Organization"
+  }
+]

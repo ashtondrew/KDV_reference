@@ -1,0 +1,21 @@
+# General Principals
+
+## Protect client data
+
+While we value open-source products, all client code and data are private and protected unless otherwise requested. We have organizational licenses for code repositories (Github), data storage (Dropbox), and security (Bitdefender).
+
+## Maximize the readability of the code
+
+We want the researchers and other clients we assist to be able to understand the code we produce. We also want to be able to return to the code ourselves or pass the code to a future collaborator with minimal effort. Consistent organization, thorough comments, and tidy code style promote readability.
+
+## Minimize assumptions
+
+We apply tests to our code and code products, as possible and appropriate. We use version control to manage our projects and their dependencies.
+
+## Value the time spent on admin tasks
+
+We believe project administration is a collaborative task and aim to allow all project members time to effectively contribute. Individuals are expected to use the tools available to plan strategy, document issues, track progress, and capture useful code snippets for future use.
+
+## Contribute back to the community
+
+We are too small to be a certified B-corp, but we can still value giving back to our community.  Employees are encouraged to share their hard-earned and useful skills via publication, instruction, conference participation, and/or community service.
