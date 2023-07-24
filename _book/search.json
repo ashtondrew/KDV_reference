@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "KDV Reference",
     "section": "",
-    "text": "Preface\nThis book is a living document created to provide reference materials to KDV employees and collaborators. It is maintained as an onboarding aid, a reference manual, and an example for students in our “Code Management for Research Teams” workshops.\nContributors include:\nC. Ashton Drew Eliot Dixon Katie Talavera EmmaLi Tsai"
+    "text": "Preface\nThis book is a living document created to provide reference materials to KDV employees and collaborators. It is maintained as an on-boarding aid, a reference manual, and an example for students in our “Code Management for Research Teams” workshops.\nContributors include:\n\nC. Ashton Drew\nEliot Dixon\nKatie Talavera\nEmmaLi Tsai"
   },
   {
     "objectID": "flowandstyle.html",
@@ -61,5 +61,19 @@
     "title": "2  KDV Workflow and Code Style",
     "section": "",
     "text": "No project will perfectly fit a standard mold, but aiming to follow a general set of methods makes it easier to collaborate in code development and maintain code products.\nProject Organization"
+  },
+  {
+    "objectID": "datamanagement.html#raw-data",
+    "href": "datamanagement.html#raw-data",
+    "title": "3  KDV Data Management",
+    "section": "3.1 Raw Data",
+    "text": "3.1 Raw Data\nRaw data received form clients should be saved within the KDV dropbox A_Data/NewProject/[…] exactly as-is. Any supporting documentation or correspondance regarding the raw data should be saved in the same raw data folder as the data itself. Only in very rare circumstances would raw data be edited outside an R script. If this is required, a README_kdv_raw_data_edits.txt file should be added to the raw data folder. If possible, the edits should be made to a copy of the raw data. The goal is to always have an original unmodified copy of the raw data along with all associated explanatory correspondence located in the same location."
+  },
+  {
+    "objectID": "datamanagement.html#data-prep",
+    "href": "datamanagement.html#data-prep",
+    "title": "3  KDV Data Management",
+    "section": "3.2 Data Prep",
+    "text": "3.2 Data Prep\nThe data prep step brings raw data from Dropbox into the associated R project environment (usually on our local systems). A series of prep_[…].rmd files import, inspect, document and summarize each raw data file and then export the data into the agreed standard file structure following the agreed naming conventions. A series of tests should be applied prior to saving to ensure all data meet the agreed standards."
   }
 ]

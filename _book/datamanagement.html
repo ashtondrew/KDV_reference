@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>KDV Reference - 2&nbsp; KDV Workflow and Code Style</title>
+<title>KDV Reference - 3&nbsp; KDV Data Management</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./datamanagement.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./flowandstyle.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">KDV Workflow and Code Style</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">KDV Data Management</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -105,12 +105,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./flowandstyle.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">KDV Workflow and Code Style</span></a>
+  <a href="./flowandstyle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">KDV Workflow and Code Style</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./datamanagement.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">KDV Data Management</span></a>
+  <a href="./datamanagement.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">KDV Data Management</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -123,14 +123,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#raw-data" id="toc-raw-data" class="nav-link active" data-scroll-target="#raw-data"><span class="toc-section-number">3.1</span>  Raw Data</a></li>
+  <li><a href="#data-prep" id="toc-data-prep" class="nav-link" data-scroll-target="#data-prep"><span class="toc-section-number">3.2</span>  Data Prep</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">KDV Workflow and Code Style</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">KDV Data Management</span></h1>
 </div>
 
 
@@ -145,10 +152,17 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>No project will perfectly fit a standard mold, but aiming to follow a general set of methods makes it easier to collaborate in code development and maintain code products.</p>
-<p>Project Organization</p>
+<p>Most of our projects have complicated data structures with multiple sources, multiple scale (of space and time), and multiple variables. Raw data may be delivered by variable, by source, or by some other organizing factor. Every project requires a data management strategy that imprts the data from these diverse sources into an organized framework. This framework should have well-defined naming conventions and facilitate flexible subsetting and merging of data as needed across sources and scales. Most of our projects involve an element of incremental discovery, so refactoring at least once through the lifespan of a project is not uncommon. Establishing well-defined “gateways” for data management is helpful (e.g., data prep, merge, qaqc, analysis) - where the data structure exiting a prior stage is structured to meet requirements of the following stage.</p>
+<section id="raw-data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="raw-data"><span class="header-section-number">3.1</span> Raw Data</h2>
+<p>Raw data received form clients should be saved within the KDV dropbox <strong>A_Data/NewProject/[…]</strong> exactly as-is. Any supporting documentation or correspondance regarding the raw data should be saved in the same raw data folder as the data itself. Only in very rare circumstances would raw data be edited outside an R script. If this is required, a <strong>README_kdv_raw_data_edits.txt</strong> file should be added to the raw data folder. If possible, the edits should be made to a copy of the raw data. The goal is to always have an original unmodified copy of the raw data along with all associated explanatory correspondence located in the same location.</p>
+</section>
+<section id="data-prep" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="data-prep"><span class="header-section-number">3.2</span> Data Prep</h2>
+<p>The data prep step brings raw data from Dropbox into the associated R project environment (usually on our local systems). A series of <strong>prep_[…].rmd</strong> files import, inspect, document and summarize each raw data file and then export the data into the agreed standard file structure following the agreed naming conventions. A series of tests should be applied prior to saving to ensure all data meet the agreed standards.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -286,13 +300,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">General Principals</span></span>
+      <a href="./flowandstyle.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">KDV Workflow and Code Style</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./datamanagement.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">KDV Data Management</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

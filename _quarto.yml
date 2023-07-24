@@ -9,6 +9,7 @@ book:
     - index.qmd
     - intro.qmd
     - flowandstyle.qmd
+    - datamanagement.qmd
     - references.qmd
 
 bibliography: references.bib

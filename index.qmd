@@ -1,10 +1,10 @@
 # Preface {.unnumbered}
 
-This book is a living document created to provide reference materials to KDV employees and collaborators. It is maintained as an onboarding aid, a reference manual, and an example for students in our "Code Management for Research Teams" workshops.
+This book is a living document created to provide reference materials to KDV employees and collaborators. It is maintained as an on-boarding aid, a reference manual, and an example for students in our "Code Management for Research Teams" workshops.
 
 Contributors include:
 
-C. Ashton Drew
-Eliot Dixon
-Katie Talavera
-EmmaLi Tsai
+ - C. Ashton Drew
+ - Eliot Dixon
+ - Katie Talavera
+ - EmmaLi Tsai
