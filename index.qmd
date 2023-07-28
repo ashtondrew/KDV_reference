@@ -4,7 +4,7 @@ This book is a living document created to provide reference materials to KDV emp
 
 Contributors include:
 
- - C. Ashton Drew
- - Eliot Dixon
- - Katie Talavera
- - EmmaLi Tsai
+-   C. Ashton Drew
+-   Eliot Dixon
+-   Katie Talavera
+-   EmmaLi Tsai
