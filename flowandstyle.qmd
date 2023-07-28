@@ -1,10 +1,12 @@
-# KDV Workflow and Style
+# Workflows and Styles
 
 No project will perfectly fit a standard mold, but aiming to follow a general set of methods makes it easier to collaborate in code development and maintain code products.
 
 ## Project Organization
 
 -   note function for new project folder prep
+
+-   recommend renv
 
 ## Data Style
 
@@ -23,3 +25,15 @@ No project will perfectly fit a standard mold, but aiming to follow a general se
 -   general value of readability/accessibility/reproducibility over efficiency  - unless working with very large data where nanoseconds saved in efficiency add up to hours
 
 -   unless otherwise specified, always theme_bw(), always centered title - note existence of KDV color palettes and ggplot theme
+
+## Methods in Git
+
+-   large projects with multiple milestones are managed in a more "gitflow" style; small projects with single deliverable skip the dev branch
+
+-   all client projects are private repos, unless (or until) otherwise stated
+
+-   internal vs external collaborators - internal all work from same repo, external fork and develop on their version
+
+-   privide link to some basic gitflow resources and the gitgames
+
+-   we use organizational github for our repos, recommend free Fork software as a branch visualization and management tool, recommend Jenny Bryan git with r online textbook as a linked resource
