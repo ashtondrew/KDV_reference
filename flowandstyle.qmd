@@ -1,5 +1,25 @@
-# KDV Workflow and Code Style
+# KDV Workflow and Style
 
 No project will perfectly fit a standard mold, but aiming to follow a general set of methods makes it easier to collaborate in code development and maintain code products.
 
-Project Organization
+## Project Organization
+
+-   note function for new project folder prep
+
+## Data Style
+
+-   all caps column names
+
+-   neverstart with numbers; if numbers use leading zeros for alphanumeric sort
+
+-   if dates, always yyyy-mm-dd
+
+## Code Style
+
+-   generally Tidyverse (provide link to tidyverse style resources; offer kdv lintr as a resource, recommend settings in RStudio)
+
+-   with some exceptions (list main exceptions)
+
+-   general value of readability/accessibility/reproducibility over efficiency  - unless working with very large data where nanoseconds saved in efficiency add up to hours
+
+-   unless otherwise specified, always theme_bw(), always centered title - note existence of KDV color palettes and ggplot theme
