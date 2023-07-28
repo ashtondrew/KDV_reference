@@ -26,6 +26,14 @@ No project will perfectly fit a standard mold, but aiming to follow a general se
 
 -   unless otherwise specified, always theme_bw(), always centered title - note existence of KDV color palettes and ggplot theme
 
+## 508 Compliance
+
+-   always recommend to clients and always do as much as feasible within scope of budget
+
+-   give quick summary of what it is and a link to one or two online tools that can review code (preferably without storing it - there are some, I think)
+
+-   minimum KDV requirements: colorblind friendly palettes (link to recommended palettes in R), include alt text (link to tips of writing good alt text?), correct use of headers for organization instead of style - define css classes for special styles
+
 ## Methods in Git
 
 -   large projects with multiple milestones are managed in a more "gitflow" style; small projects with single deliverable skip the dev branch
