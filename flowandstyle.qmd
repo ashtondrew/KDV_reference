@@ -4,25 +4,25 @@ No project will perfectly fit a standard mold, but we aim to follow a general se
 
 ## Project Organization
 
--   note function for new project folder prep
+-   note function for new project folder prep.
 
--   recommend renv
+-   We recommend the use of the renv package for managing R libraries.
 
 ## Data Style
 
--   Column names should be in all caps
+-   Column names should be in all caps.
 
--   never start with numbers; if numbers use leading zeros for alphanumeric sort
+-   Never start with numbers; if numbers are needed for a particular project, then use leading zeros for alphanumeric sort.
 
 -   Dates should always match the yyyy-mm-dd format. For example, 2023-08-01.
 
 ## Code Style
 
--   We adopt a code style that generally matches [tidyverse](https://style.tidyverse.org/index.html) (offer kdv lintr as a resource, recommend settings in RStudio), with some exceptions:
+-   We adopt a code style that generally matches [tidyverse](https://style.tidyverse.org/index.html) (offer kdv lintr as a resource), with some exceptions:
 
     -   camelCase is always used for variable names. For example, using nestType instead of nest_type.
 
--   We value readability/accessibility/reproducibility over efficiency - unless working with very large data where nanoseconds saved in efficiency add up to hours.
+-   We value readability/accessibility/reproducibility over efficiency, unless working with very large data where nanoseconds saved in efficiency add up to hours.
 
 -   Unless otherwise specified, always theme_bw() and a centered title when creating graphs in R (note existence of KDV color palettes and ggplot theme).
 
@@ -32,11 +32,11 @@ No project will perfectly fit a standard mold, but we aim to follow a general se
 
 ## 508 Compliance
 
--   508 compliance is always recommend to clients and we always do as much as feasible within the scope of our budget.
+-   508 compliance is always recommend to clients and we always do as much as feasible within the scope of our budget. This is to ensure that all of our software products are accessible to users with disabilities.
 
--   give quick summary of what it is and a link to one or two online tools that can review code (preferably without storing it - there are some, I think)
+-   There are a handful of online tools that can review documents for 508 compliance, such as the [Accessibility Tests for Electronic Documents](https://www.section508.gov/test/documents/), (provide more online tools that can review code preferably without storing it - there are some, I think)
 
--   At mimum, KDV always devlopes maps that use colorblind friendly palettes (see [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html) and [Rcolorbrewer](https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/) packages) and include alternative text (here are some [guidelines](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) for writing alternative text). We also use headers for organization instead of styling text (define css classes for special styles).
+-   At minimum, KDV always develops maps that use colorblind friendly palettes (see [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html) and [Rcolorbrewer](https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/) packages) and include alternative text (here are some [guidelines](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) for writing alternative text). We also use headers for organization instead of styling text (define css classes for special styles).
 
 ## Methods in Git
 
@@ -44,9 +44,9 @@ No project will perfectly fit a standard mold, but we aim to follow a general se
 
 -   For data privacy purposes, all client projects are located in private repositories unless (or until) otherwise stated.
 
--   For internal collaborators within KDV, all work is done within the same repository within the organizations' GitHub account. For external collaborators (i.e., contractors), a fork is created and development occurrs on their own version.
+-   For internal collaborators within KDV, all work is done within the same repository within the organizations' GitHub account. For external collaborators (i.e., contractors), a fork is created and development occurs on their own version.
 
--   Resouces for Git and GitHub:
+-   Resources for Git and GitHub:
 
     -   Getting set up with Git and the overall [workflow](https://www.freecodecamp.org/news/practical-git-and-git-workflows/)
 
