@@ -3,3 +3,7 @@
 -   Provide instructions to access resources and templates (where to look on dropbox)
 
 -   Sections prob include: Resumes and CV and staff photos, Company Prospectus, Logos, KDV Forms (travel reimbursement, incidental reimbursement)
+
+-   Official KDV logo:
+
+![](images/KDVLogo.png){fig-alt="Official KDV logo"}
