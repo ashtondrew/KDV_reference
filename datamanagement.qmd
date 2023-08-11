@@ -14,9 +14,18 @@ The data prep step brings raw data from Dropbox into the associated R project en
 
 -   usually when there are many sources for one variable
 
-## Other prefixes
+## Analysis
 
--   analysis
--   visualization
--   model
--   report
+-   Insert analysis methods here
+
+## Visualization
+
+-   Insert data visualization methods here; using theme_bw() when developing graphs in ggplot
+
+## Modeling
+
+-   Insert data modeling methods here
+
+## Reporting
+
+-   Insert reporting methods here

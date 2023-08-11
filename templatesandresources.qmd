@@ -1,8 +1,20 @@
 # Templates and Resources
 
--   Provide instructions to access resources and templates (where to look on dropbox)
+Provide instructions to access resources and templates (where to look on dropbox)
 
--   Sections prob include: Resumes and CV and staff photos, Company Prospectus, Logos, KDV Forms (travel reimbursement, incidental reimbursement)
+## Meet KDV 
+
+-   Here - insert resumes, CVs, and staff photos
+
+## Company Prospectus
+
+-   Company Prospectus
+
+## Reimbursement Forms
+
+-    KDV Forms (travel reimbursement, incidental reimbursement)
+
+## Logos
 
 -   Official KDV logo:
 
