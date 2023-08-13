@@ -2,7 +2,7 @@
 
 Provide instructions to access resources and templates (where to look on dropbox)
 
-## Meet KDV 
+## Meet KDV
 
 -   Here - insert resumes, CVs, and staff photos
 
@@ -12,7 +12,7 @@ Provide instructions to access resources and templates (where to look on dropbox
 
 ## Reimbursement Forms
 
--    KDV Forms (travel reimbursement, incidental reimbursement)
+-   KDV Forms (travel reimbursement, incidental reimbursement)
 
 ## Logos
 
