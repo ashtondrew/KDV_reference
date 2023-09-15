@@ -1,47 +1,57 @@
 # Workflows and Styles
 
-No project will perfectly fit a standard mold, but aiming to follow a general set of methods makes it easier to collaborate in code development and maintain code products.
+No project will perfectly fit a standard mold, but we aim to follow a general set of methods to make it easier to collaborate in code development and maintain code products.
 
 ## Project Organization
 
--   note function for new project folder prep
+-   We use an internal KDV function, named generateFolders, for prepping the file structure for a new project.
 
--   recommend renv
+-   We recommend the use of the renv package for managing R libraries.
 
 ## Data Style
 
--   all caps column names
+-   Column names should be in all caps.
 
--   neverstart with numbers; if numbers use leading zeros for alphanumeric sort
+-   Never start with numbers; if numbers are needed for a particular project, then use leading zeros for alphanumeric sort.
 
--   if dates, always yyyy-mm-dd
+-   Dates should always match the yyyy-mm-dd format. For example, August 1st, 2023 should be: 2023-08-01.
 
 ## Code Style
 
--   generally Tidyverse (provide link to tidyverse style resources; offer kdv lintr as a resource, recommend settings in RStudio)
+-   We adopt a code style that generally matches [tidyverse](https://style.tidyverse.org/index.html), and a lintr is being developed that can check R code for adherence to the KDV style guide. There are some exceptions:
 
--   with some exceptions (list main exceptions)
+    -   camelCase is always used for variable names. For example, using "nestType" instead of "nest_type" as the name for a variable.
 
--   general value of readability/accessibility/reproducibility over efficiency  - unless working with very large data where nanoseconds saved in efficiency add up to hours
+-   We value readability/accessibility/reproducibility over efficiency, unless working with very large data where nanoseconds saved in efficiency add up to hours.
 
--   unless otherwise specified, always theme_bw(), always centered title - note existence of KDV color palettes and ggplot theme
+-   Unless otherwise specified, always theme_bw() and a centered title when creating graphs in R (note existence of KDV color palettes and ggplot theme).
+
+-   The Global Options for R diagnostics (Tools/Global Options/Code/Diagnostics) should be identical to the following screenshot:
+
+    ![Image of R code diagnostic settings.](images/diagnosticSettings.png)
 
 ## 508 Compliance
 
--   always recommend to clients and always do as much as feasible within scope of budget
+-   508 compliance is always recommend to clients and we always do as much as feasible within the scope of our budget. 508 compliance refers to [Section 508 of the Rehabilitation Act](https://www.section508.gov/manage/laws-and-policies/), which is a federal law to to ensure that all software products are accessible to users with disabilities.
 
--   give quick summary of what it is and a link to one or two online tools that can review code (preferably without storing it - there are some, I think)
+-   There are a handful of online tools that can review documents for 508 compliance. Here are some that the government has compiled: [Accessibility Tests for Electronic Documents](https://www.section508.gov/test/documents/) (provide more online tools that can review code preferably without storing it - there are some, I think).
 
--   minimum KDV requirements: colorblind friendly palettes (link to recommended palettes in R), include alt text (link to tips of writing good alt text?), correct use of headers for organization instead of style - define css classes for special styles
+-   At minimum, KDV always develops maps that use colorblind friendly palettes (see [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html) and [Rcolorbrewer](https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/) packages) and include alternative text (here are some [guidelines](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text) for writing effective alternative text). We also use headers for organization instead of styling text, such as using the h1, h2, h3 tags when denoting different sections of a document.
 
 ## Methods in Git
 
--   large projects with multiple milestones are managed in a more "gitflow" style; small projects with single deliverable skip the dev branch
+-   Large projects with multiple milestones are managed in a more "gitflow" style with versioning and branching (i.e., main and development). Smaller projects with a single deliverable often do not have a development branch.
 
--   all client projects are private repos, unless (or until) otherwise stated
+-   For data privacy purposes, all client projects are located in private repositories unless (or until) otherwise stated.
 
--   internal vs external collaborators - internal all work from same repo, external fork and develop on their version
+-   For internal collaborators within KDV, all work is done within the same repository within the organizations' GitHub account. For external collaborators (i.e., contractors), a fork is created and development occurs on their own version.
 
--   privide link to some basic gitflow resources and the gitgames
+-   Resources for Git and GitHub:
 
--   we use organizational github for our repos, recommend free Fork software as a branch visualization and management tool, recommend Jenny Bryan git with r online textbook as a linked resource
+    -   Getting set up with Git and the overall [workflow](https://www.freecodecamp.org/news/practical-git-and-git-workflows/)
+
+    -   Jenny Bryan's [online textbook](https://happygitwithr.com/), "Happy Git and GitHub for the userR"
+
+    -   Git-games: [version 1](https://github.com/git-game/git-game) and [version 2](https://github.com/git-game/git-game-v2)
+
+    -   Using [Fork](https://git-fork.com/) as a branch visualization and management tool
